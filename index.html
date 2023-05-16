@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Topics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&family=Nunito+Sans:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="This is the description of the webpage."
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="index.html">Web Topics</a>
+        </div>
+        <div class="user-preferences">
+          <a href="pages/index-dark.html"
+            ><ion-icon name="moon-outline"></ion-icon><span>Dark Mode</span>
+          </a>
+          <a href="#" id="fav"
+            ><ion-icon name="heart-outline"></ion-icon>
+            <span>Favourites</span></a
+          >
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <div class="container">
+        <h1>Welcome to our website!</h1>
+        <p>we have a new design that's fresh, modern, and easy to use.</p>
+      </div>
+      <div id="search-bar">
+        <div class="container">
+          <ion-icon name="search-outline"></ion-icon>
+          <input type="text" id="myInput" placeholder="Search the website..." />
+          <label>Sort By:</label>
+          <select name="sort">
+            <option value="Default">Default</option>
+            <option value="Name">Name</option>
+            <option value="Latest">Latest</option>
+            <option value="Highest">Highest</option>
+          </select>
+
+          <label>Filter by:</label>
+          <select name="filter">
+            <option value="Default">Default</option>
+            <option value="Name">Name</option>
+            <option value="Latest">Latest</option>
+            <option value="Highest">Highest</option>
+          </select>
+        </div>
+      </div>
+    </main>
+
+    <section id="topics-section">
+      <div class="container">
+        <h2>"24" Web Topics Found</h2>
+        <div id="topics">
+          <div class="topic-card">
+            <img src="img/html.png" alt="HTML" />
+            <div class="card-info">
+              <p>Web Development Languages</p>
+              <h3>HTML</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/css.webp" alt="HTML" />
+            <div class="card-info">
+              <p>Web Development Languages</p>
+              <h3>CSS</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: David Lee</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/javascript.jpg" alt="HTML" />
+            <div class="card-info">
+              <p>Web Development Languages</p>
+              <h3>JavaScript</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: John Johnson</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/jquery.png" alt="HTML" />
+            <div class="card-info">
+              <p>Web Development Languages</p>
+              <h3>jQuery</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/angular.png" alt="HTML" />
+            <div class="card-info">
+              <p>Frontend Framework and Libraries</p>
+              <h3>Angular</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Jessica Davis</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/react.webp" alt="HTML" />
+            <div class="card-info">
+              <p>Frontend Framework and Libraries</p>
+              <h3>React</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Daniet Brown</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/vuejs.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Frontend Framework and Libraries</p>
+              <h3>Vue</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Ava Jones</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/nodejs.webp" alt="HTML" />
+            <div class="card-info">
+              <p>Backend Framework and Libraries</p>
+              <h3>Node.js</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Michael kim</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/expressjs.webp" alt="HTML" />
+            <div class="card-info">
+              <p>Backend Framework and Libraries</p>
+              <h3>Express.js</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/ruby.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>>Backend Framework and Libraries</p>
+              <h3>Ruby on Rails</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/django.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>>Backend Framework and Libraries</p>
+              <h3>Django</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/flask.webp" alt="flask" />
+            <div class="card-info">
+              <p>Backend Framework and Libraries</p>
+              <h3>Flask</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/sql.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>SQL</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/nosql.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>NoSQL</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/restapi.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Rest APIs</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/graphql.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>GraphQL</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/oauth.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>OAuth</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/json.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>JSON</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/ajax.gif" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>AJAX</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/websockets.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Websockets</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/responsive.gif" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Responsive Design</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/accessibility.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Accessibility</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/ux.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>User Experience (UX)</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/ui.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>User Interface (UI)</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/design-systems.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Design systems</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/performance.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>performance</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/cross-browser.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>cross-browser</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/seo.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>SEO</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/web-security.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>web-security</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/testing.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>testing</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/ci-cd.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>CI - CD</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/devops.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Devops</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/cloud.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>cloud</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/docker.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>docker</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/microservices.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>microservices</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/pwa.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>PWA</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/wai.jpeg" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>WAI</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/cms.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>CMS</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+          <div class="topic-card">
+            <img src="img/analytics.png" alt="HTML" />
+            <div class="card-info">
+              <p>Database and APIs</p>
+              <h3>Web Analytics</h3>
+              <div class="star-rating">
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star" class="checked"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <p class="author">Author: Sarah Smith</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Developed with <ion-icon name="heart"></ion-icon> &copy; 2023</p>
+    </footer>
+
+    <section id="fav-topics">
+      <div class="container">
+        <h3>My Favourite Topics</h3>
+        <div class="fav-cards">
+          <div class="fav-card">
+            <img src="img/react.webp" alt="react" />
+            <p>React</p>
+            <div class="star-rating">
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </div>
+          <div class="fav-card">
+            <img src="img/cloud.jpeg" alt="react" />
+            <p>cloud</p>
+            <div class="star-rating">
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star" class="checked"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- script to show and hide favourites topics -->
+    <script>
+        let favs = document.getElementById('fav-topics');
+        document.getElementById('fav').onclick= function(){
+           if( favs.style.display=='block'){
+            favs.style.display='none'
+           }else{
+            favs.style.display='block'
+           }
+        }
+    </script>
+    <!-- document.documentElement.style.setProperty('--primary-color', '#f00'); -->
+  </body>
+</html>

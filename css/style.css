@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo a {
+  color: var(--brand-primary);
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .user-preferences a {
+  text-decoration: none;
+  color: var(--body-text);
+  font-weight: 700;
+  border: 1px solid var(--lines-color);
+  padding: 7px 8px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 0 5px ;
+  text-align: center;
+}
+header .user-preferences a span {
+  margin-left: 5px;
+  display: inline-block;
+}
+header .user-preferences a:hover {
+  background-color: #dddddd;
+}
+header .user-preferences ion-icon {
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+main h1 {
+  text-align: center;
+  color: var(--brand-secondary);
+  font-size: 28px;
+}
+main p {
+  font-size: 20px;
+  text-align: center;
+  color: var(--body-text);
+  margin-bottom: 20px;
+}
+main #search-bar {
+  background: var(--bg_body);
+  padding: 20px 0;
+}
+#search-bar{
+  position: relative;
+}
+#search-bar ion-icon {
+  position: absolute;
+  top: 29px;
+  left: 35px;
+  color: var(--body-text);
+}
+#search-bar input[type=text]{
+  width: 70%;
+  display: inline-block;
+  border: 1px solid var(--lines-color);
+  padding: 8px 10px 8px 35px;
+  border-radius: 5px;
+  outline: none;
+}
+#search-bar select{
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+section#topics-section {
+  background: var(--bg_body);
+}
+section#topics-section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 10px;
+}
+section#topics-section #topics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section#topics-section #topics .topic-card {
+  max-width: 19%;
+  height: auto;
+  background: #ffff;
+  border-radius: 7px;
+  margin: 15px 0;
+}
+section#topics-section #topics .topic-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+.topic-card .card-info {
+  padding: 10px 10px 15px;
+}
+.topic-card .card-info p {
+  color: #000;
+  font-size: 14px;
+}
+.topic-card .card-info h3 {
+  font-size: 18px;
+}
+.topic-card .card-info .author {
+  font-size: 14px;
+  color: var(--body-text);
+}
+.topic-card .card-info .star-rating {
+  padding: 25px 0 10px;
+}
+.star-rating .checked {
+  color: orange;
+}
+
+footer {
+  background: var(--bg_body);
+  padding: 20px 0;
+}
+footer p {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+footer ion-icon {
+  color: #dc143c;
+  vertical-align: bottom;
+  font-size: 28px;
+}
+
+#fav-topics{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+#fav-topics .fav-cards{
+  padding: 15px 0;
+  display: flex;
+}
+#fav-topics h3{
+padding: 15px 0 0;
+}
+#fav-topics .fav-card{
+  width: 150px;
+  box-shadow: 0px 1px 11px -4px rgba(0,0,0,0.69);
+  margin-right: 10px;
+}
+
+#fav-topics .fav-card p{
+  padding: 0 0 0 10px
+} 
+#fav-topics .fav-card img{ 
+  width: 150px;
+  height: 100px;
+}
+#fav-topics .star-rating{ 
+  padding: 0 0 0 10px
+}
+
+/* dark mode */
+
+footer.darkmode p{
+  color: #fff;
+}
+body.darkmode .topic-card .card-info{
+  color: #fff;
+}
+body.darkmode .topic-card .card-info p{
+  color: #fff;
+}
+body.darkmode section#topics-section #topics .topic-card{
+  background: var(--bg_default);
+}
+body.darkmode section#topics-section h2{
+  color: #fff;
+}
+main.darkmode #search-bar input[type=text]{
+  background: var(--bg_default);
+  color: #fff;
+}
+
+
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+  section#topics-section #topics .topic-card {
+    max-width: 100%;
+  }
+  header .user-preferences a span {
+    display: none;
+  }
+  #search-bar input[type=text]{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  section#topics-section #topics .topic-card {
+    max-width: 31%;
+  }
+  #search-bar input[type=text]{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+  
